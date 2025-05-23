@@ -1,42 +1,26 @@
-package com.example.demo;
+package modelo;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import java.util.UUID;
-    @Data
-    @AllArgsConstructor
-    @NoArgsConstructor
-
-    public class UserModel {
-         @Id
-        private UUID ID;
-        public class Usuario {
-    private string nome;
+public class Usuario {
+    private int id;
+    private String nome;
     private String email;
-    private String senha;
 
-    // Construtor
-    public Usuario(string nome, String email, String email) {
+    public Usuario() {}
+
+    public Usuario(String nome, String email) {
         this.nome = nome;
         this.email = email;
-        this.senha = senha;
     }
 
-    // Getters e Setters
-    public string getnome() {
-        return nome;
+    public int getId() {
+        return id;
     }
 
-    public void setnome(string nome) {
-        this.id = nome;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getemail() {
+    public String getNome() {
         return nome;
     }
 
@@ -51,6 +35,6 @@ import java.util.UUID;
     public void setEmail(String email) {
         this.email = email;
     }
-
+}
 
     }
