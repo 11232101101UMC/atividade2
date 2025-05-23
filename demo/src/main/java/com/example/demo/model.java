@@ -16,27 +16,27 @@ import java.util.UUID;
          @Id
         private UUID ID;
         public class Usuario {
-    private int id;
-    private String nome;
+    private string nome;
     private String email;
+    private String senha;
 
     // Construtor
-    public Usuario(int id, String nome, String email) {
-        this.id = id;
+    public Usuario(string nome, String email, String email) {
         this.nome = nome;
         this.email = email;
+        this.senha = senha;
     }
 
     // Getters e Setters
-    public int getId() {
-        return id;
+    public string getnome() {
+        return nome;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setnome(string nome) {
+        this.id = nome;
     }
 
-    public String getNome() {
+    public String getemail() {
         return nome;
     }
 
